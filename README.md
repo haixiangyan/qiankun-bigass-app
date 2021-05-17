@@ -5,9 +5,13 @@
 ## 怎么用
 
 ```shell
-yarn install # 安装所有依赖
+yarn install:main # 安子应用
+yarn install:taobao # 安装子应用
+yarn install:baidu # 安装子应用
 
-yarn start   # 开启应用
+yarn start:main   # 开启主应用
+yarn start:taobao   # 开启子应用
+yarn start:baidu   # 开启子应用
 ```
 
 ## 主应用访问
