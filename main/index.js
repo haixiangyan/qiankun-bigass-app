@@ -59,7 +59,7 @@ const { onGlobalStateChange, setGlobalState } = initGlobalState({
   user: 'qiankun',
 });
 
-onGlobalStateChange((value, prev) => console.log('[onGlobalStateChange - master]:', value, prev));
+onGlobalStateChange((value, prev) => console.log('[onGlobalStateChange - master]:', value, prev), true);
 
 setGlobalState({
   ignore: 'master',

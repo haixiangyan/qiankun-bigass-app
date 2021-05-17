@@ -12,12 +12,23 @@ if (!window.__POWERED_BY_QIANKUN__) {
   render({});
 }
 
+function storeTest(props) {
+  props.onGlobalStateChange((value, prev) => console.log('淘宝', `[onGlobalStateChange - ${props.name}]:`, value, prev), true);
+  props.setGlobalState({
+    ignore: props.name,
+    user: {
+      name: props.name,
+    },
+  });
+}
+
 export async function bootstrap() {
-  console.log('[react16] react app bootstraped');
+  console.log('[淘宝] react app bootstraped');
 }
 
 export async function mount(props) {
-  console.log('[react16] props from main framework', props);
+  console.log('[淘宝] props from main framework', props);
+  storeTest(props);
   render(props);
 }
 
