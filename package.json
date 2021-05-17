@@ -1,0 +1,17 @@
+{
+  "name": "qiankun-bigass-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Haixiang6123/qiankun-bigass-app.git",
+  "author": "haixiangyan <haixiang6123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:main": "cd ./main && yarn start",
+    "start:taobao": "cd ./taobao && yarn start",
+    "start:baidu": "cd ./baidu && yarn start"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
