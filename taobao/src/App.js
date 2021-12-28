@@ -12,7 +12,7 @@ const RouteExample = () => {
       </nav>
       <Suspense fallback={null}>
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/home" exact component={Home} />
           <Route path="/about" component={About} />
         </Switch>
       </Suspense>
