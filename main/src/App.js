@@ -29,6 +29,12 @@ function App() {
     start();
   }, []);
 
+  // 也 OK
+  // const pushState = () => {
+  //   const event = new Event('hashchange');
+  //   window.dispatchEvent(event);
+  // }
+
   return (
     <HashRouter>
       <div className="app">
@@ -36,10 +42,10 @@ function App() {
           <ul>淘宝</ul>
           <ul>
             <li>
-              <Link to='/taobao/home'>淘宝首页</Link>
+              <a href='/#/taobao/home'>淘宝首页</a>
             </li>
             <li>
-              <Link to='/taobao/about'>淘宝关于</Link>
+              <a href='/#/taobao/about'>淘宝关于</a>
             </li>
           </ul>
           <ul>
