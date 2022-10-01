@@ -38,8 +38,8 @@ function App() {
   return (
     <HashRouter>
       <div className="app">
-        <ul>
-          <ul>淘宝</ul>
+        <div className="sidebar">
+          <h1>正常更新的侧边栏</h1>
           <ul>
             <li>
               <a href='/#/taobao/home'>淘宝首页</a>
@@ -48,10 +48,17 @@ function App() {
               <a href='/#/taobao/about'>淘宝关于</a>
             </li>
           </ul>
+
+          <h1>无法更新的侧边栏</h1>
           <ul>
-            百度
+            <li>
+              <Link to='/taobao/home'>淘宝首页</Link>
+            </li>
+            <li>
+              <Link to='/taobao/about'>淘宝关于</Link>
+            </li>
           </ul>
-        </ul>
+        </div>
 
         <Routes>
           <Route path="/taobao/home" element={null} />
